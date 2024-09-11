@@ -65,13 +65,6 @@ class Solution
         std::copy_if(strManip.begin(), strManip.end(), std::back_inserter(res),
             [](const char& c) ->bool { return c != ' '; });
 
-        for(i = 0; i < numRows; ++i)
-        {
-            for(j = 0; j < numColumns; ++j)
-                std::cout << strManip[COORD_2D_(i,j,numColumns)] << " ";
-            std::cout << "\n";
-        }
-        
         return res;
     }
 
